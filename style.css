@@ -6,6 +6,10 @@ header {
     height: 340px;
 }
 
+header.sub-page {
+  height: 100px;
+}
+
 img {
     border-radius: 50%;
     grid-row: 1;
@@ -27,6 +31,10 @@ h1 {
 
 hr {
     max-width: 75%;
+}
+
+hr.sub-page {
+  width: 800px;
 }
 
 main {
@@ -117,7 +125,7 @@ footer {
   animation-name: purple2;
   animation-fill-mode: forwards;
   animation-duration: .2s;
-  animation-delay: .8s;
+  animation-delay: .85s;
 }
 
 @keyframes purple2 {
@@ -153,3 +161,53 @@ footer {
   100% {background: rgba(98,55,202,.5)}
 }
 
+/* styles for pages here */
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.campaign {
+  width: 720px;
+  height: 240px;
+  background: #333333;
+  margin: 20px auto;
+}
+
+.helmer {
+  background: url(img/Helmer.jpg);
+  background-size: cover;
+}
+
+.turpin {
+  background: url(img/turpin.jpg);
+  background-size: cover;
+}
+
+.clinton {
+  background: url(img/clinton.jpg);
+  background-size: cover;
+}
+
+.image-text {
+  font-family: 'Oswald', sans-serif;
+  height: 240px;
+  width: 720px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(30, 30, 30, 0.2);
+  color: white;
+}
+
+.image-text:hover {
+  background: rgba(30 , 30, 30, 0.5)
+}
+
+.image-text h2 {
+  margin: 90px auto 0 auto;
+}
+
+.image-text p {
+  margin: 0 auto;
+}
