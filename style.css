@@ -201,13 +201,20 @@ footer {
 }
 
 .image-text:hover {
-  background: rgba(30 , 30, 30, 0.5)
+  background: rgba(30 , 30, 30, 0.6)
 }
 
 .image-text h2 {
   margin: 90px auto 0 auto;
+  font-weight: 400;
 }
 
 .image-text p {
   margin: 0 auto;
+  display: none;
+  font-weight: 200;
+}
+
+p span {
+  font-weight: 400;
 }
