@@ -5,50 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jason P. Toups</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Oswald:700|Vollkorn:400i" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <header>
-        <img src="./img/headshot.jpg" alt="Jason Toups Headshot">
-        <h1>Jason P. Toups</h1>
-    </header>
-    <hr>
     <main>
-        <div id=code class=homepage-categories>
-            <h2><a href="./code.html">Code</a></h2>
-            <ul>
-                    <li><a href="https://github.com/jasonptoups/wdi-fundamentals-memorygame">Memory Game</a></li>
-                    <li><a href="https://github.com/jasonptoups">GitHub</a></li>
-            </ul>
+      <section class="slide" id="jason">
+        <div class="background">
+          <div class="container">
+            <div class="content">
+              <div class="headshot-container">
+                <img class="headshot" src="./img/headshot.jpg" alt="Jason Toups Headshot">
+              </div>
+              <h1 class="name header">Jason P. Toups</h1>
+              <div class="logo">
+                <div class="circle red2"></div>
+                <div class="circle red1"></div>
+                <div class="circle purple2"></div>
+                <div class="circle purple1"></div>
+                <div class="circle blue2"></div>
+                <div class="circle animated"></div>
+              </div>
+              <div class="brand">
+                <p>A Web Developer and Democratic Campaigner with a passion for building digital tools to help progressive candidates win. Creative problem solver and innovator who tackles hard challenges with big ideas to create real, lasting change. </p>
+              </div>
+            </div>
+          </div>
         </div>
-        
-        <div id=campaign class=homepage-categories>
-            <h2><a href="./campaigns.html">Campaign</a></h2>
-            <ul>
-                <li>Dan Helmer 2018</li>
-                <li>Cheryl Turpin 2017</li>
-                <li>Hillary Clinton 2016</li>
-                <li>Consulting Work</li>
-            </ul>
-        </div>
+      </section>
+      <section class="slide" id="projects">
+        <div class="background">
+          <div class="container">
+            <div class="slide-content">
+              <h2>My Personal Projects</h2>
+              <div class="project-card">
+                <h3>Candidate Explorer</h3>
+                <img class="project-image" src="img/candidate-explorer.png" alt="2018 Candidate Explorer">
+                <div class="project-text">
+                  <p class=""><span>Purpose:</span> A single page application that allows users to view Democratic candidates for Congress and filter them dynamically based on several criteria.</p>
+                  <p class=""><span>Technologies:</span> VueJS, MongoDB, Node, Express, CSS (Bulma)</p>
+                </div>
+              </div>
+              <div class="project-card">
+                <h3>Learn Hiragana</h3>
+                <img class="project-image" src="img/learn-hiragana.png" alt="Learn Hiragana flashcards App">
+                <div class="project-text">
+                  <p class=""><span>Purpose:</span> A single page application provides users with flashcards for learning Japanese Hiragana. Each flashcard has a helpful mnemonic and keeps score as you go along.</p>
+                  <p class=""><span>Technologies:</span> Vanilla JavaScript, HTML, CSS</p>
+                </div>
 
-        <div id=other class=homepage-categories>
-            <h2><a href="./other.html">Contact</a></h2>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/jasonptoups">LinkedIn</a></li>
-                <li><a href="mailto:jason.p.toups@gmail.com">Email</a></li>
-            </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+      <section class="slide" id="campaigns">
+          <div class="background">
+            <div class="container">
+              <div class="slide-content">
+                <h2>My Past Campaigns</h2>
+                <div class="campaign helmer">
+                  <div class="image-text">
+                    <h2>Dan Helmer</h2>
+                    <div class="campaign-wrapper">
+                      <p><span>Role</span>: Finance Director</p>
+                      <p><span>Accomplishments</span>: Grew average weekly donations by 285%, hired and trained an amazing finance team, and fully digitized the call-time process</p>
+                      <p><span>Outcome</span>: Raised $900,000 </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="campaign turpin">
+                  <div class="image-text">
+                    <h2>Cheryl Turpin</h2>
+                    <div class="campaign-wrapper">
+                      <p><span>Role</span>: Field Director</p>
+                      <p><span>Accomplishments</span>: Flipped a Trump district (the only one to do so in Virginia in 2017), knocked close to 40,000 doors in 4 days during GOTV</p>
+                      <p><span>Outcome</span>: Victory</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="campaign clinton">
+                  <div class="image-text">
+                    <h2>Hillary Clinton</h2>
+                    <div class="campaign-wrapper">
+                      <p><span>Role</span>: Field Organizer</p>
+                      <p><span>Accomplishments:</span> Ranked one of the top organizers in PA and led team with over 300 local volunteers</p>
+                      <p><span>Outcome</span>: Statewide defeat, but 20% improvement from Obama 2012 in my turf</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+            <div class="background">
+              <div class="container">
+                <div class="contact">
+                  <h2>Contact</h2>
+                  <div class="contact-list">
+                    <ul>
+                      <li>
+                        <a href="mailto:jasonptoups@gmail.com">
+                          <i class="far fa-envelope"></i>
+                          <p>Email</p>
+                        </a>
+                      </li>
+                      <li> 
+                        <a href="https://github.com/jasonptoups">
+                          <i class="fab fa-github"></i>
+                          <p>Github</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.linkedin.com/in/jasonptoups">
+                          <i class="fab fa-linkedin"></i>
+                          <p>LinkedIn</p>
+                        </a>  
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
     </main>
-    <footer>
-    <div class="circle red2"></div>
-    <div class="circle red1"></div>
-    <div class="circle purple2"></div>
-    <div class="circle purple1"></div>
-    <div class="circle blue2"></div>
-    <div class="circle animated"></div>
-    </footer>
 </body>
 </html>
