@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+main {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 .headshot-container {
   padding: 20px 0 0 0;
 }
@@ -33,7 +41,11 @@
 }
 
 #jason {
-  background-color: lightgrey;
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+  transform: translateZ(-1px) scale(2);
+  background-color:lightgrey;
 }
 
 #projects {
@@ -81,6 +93,10 @@
   background-color: #353037;
   display: grid;
   grid-template-columns: 337px 30px 1fr;
+}
+
+.project-card:hover {
+  cursor: pointer;
 }
 
 .project-image {
