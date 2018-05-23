@@ -67,6 +67,12 @@ main {
   height: 20vh;
 }
 
+#scroll {
+  height: 100px;
+  width: 48px;
+  margin: 0 auto;
+}
+
 #scroll a:hover {
   opacity: .4;
 }
@@ -75,10 +81,7 @@ main {
   padding-top: 30px;
   position: absolute;
   bottom: 20px;
-  left: 48.5%;
   display: inline-block;
-  /* -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%); */
   color: #fff;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -434,4 +437,72 @@ main {
 @keyframes blue2 {
   0% {background: rgba(0,0,0,0);}
   100% {background: rgba(98,55,202,.5)}
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .headshot {
+    min-width: 30px;
+  }
+
+  .header {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+
+  .brand {
+    font-size: 18px;
+    padding: 0 10px;
+    line-height: 32px;
+    margin-top: 20px;
+  }
+
+  #scroll a {
+    font-size: 18px;
+  }
+
+  .circle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .animated {
+    top: -250px;
+  }
+  
+  @keyframes move-right {
+    0% {background: rgba(241,50,56,.5);left: 10px;}
+    100% {background: rgba(63,57,239,.5); left: 200px}
+  }
+  
+  .red2 {
+    left: 0px;
+  }
+  
+  .red1 {
+    left: 40px;
+    top: -50px;
+  }
+  
+  .purple2 {
+    left: 80px;
+    top: -100px;
+  }
+  
+  .purple1 {
+    left: 120px;
+    top: -150px;
+  }
+  
+  .blue2 {
+    left: 160px;
+    top: -200px;
+  }
+  
+  .logo {
+    max-height: 50px;
+    max-width: 250px;
+  }
+  
 }
