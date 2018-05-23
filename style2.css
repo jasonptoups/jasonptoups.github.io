@@ -135,7 +135,6 @@ main {
   }
 }
 
-
 .slide {
   height: 100vh;
 }
@@ -332,12 +331,6 @@ main {
   font-size: 40px;
 }
 
-/* a {
-  text-decoration: none;
-  color: white;
-  text-align: center;
-} */
-
 .circle {
   width: 100px;
   height: 100px;
@@ -441,7 +434,9 @@ main {
 
 
 
-@media only screen and (max-width: 768px) {
+
+
+@media only screen and (max-height: 700px) {
   .headshot {
     min-width: 30px;
   }
@@ -456,11 +451,174 @@ main {
     padding: 0 10px;
     line-height: 32px;
     margin-top: 20px;
+    font-family: 'Lato', sans-serif
   }
 
   #scroll a {
     font-size: 18px;
   }
+
+  #jason {
+    position: static;
+    z-index: 0;
+    transform: translateZ(0px) scale(1);
+    width: 100%;
+    background-color:lightgrey;
+  }
+
+  #projects {
+    background: url(img/Background1.png);
+    z-index: 0;
+    position: static;
+    height: 1000px;
+  }
+
+  .slide-content {
+    justify-content: flex-start;
+    height: 1000px;
+  }
+
+  .slide-content h2 {
+    font-size: 30px;
+    margin: 10px auto;
+  }
+
+  .project-card{
+    width: 300px;
+    height: 450px;
+    margin-bottom: 25px;
+    display: block;
+    opacity: 1;
+    text-align: center;
+    border-radius: 7px;
+  }
+
+  .project-card:hover {
+    opacity: 1;
+  }
+
+  .project-image {
+    max-width: 250px;
+    margin: 5px auto 0 auto;
+  }
+
+  .project-text {
+    padding: 7px 0;
+    text-align: center;
+  }
+
+  .project-text p {
+    margin: 0 5px 10px 5px;
+    font-size: 14px;
+  }
+
+  .icon {
+    font-size: 35px;
+  }
+
+  .project-text p span {
+    font-weight: 400;
+  }
+
+  .project-text a {
+    color: white;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0 10px;
+  }
+
+  .project-text a:hover {
+    cursor: pointer;
+  }
+
+  .project-card h3 {
+    font-size: 25px;
+    margin: 0 0 0 0px;
+    text-align: center;
+    height: auto;
+  }
+
+  .image-text {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(30, 30, 30, 0.2);
+    color: white;
+  }
+
+  #campaigns {
+    height: 1025px
+  }
+
+  .campaign {
+    max-width: 300px;
+    height: auto;
+    margin: 0 0 20px 0;
+  }
+
+  .image-text {
+    background: rgba(30 , 30, 30, 0.5);
+    border-radius: 7px;
+  }
+
+  .image-text h2 {
+    margin: 120px auto 10px auto;
+    font-size: 25px;
+  }
+
+  .image-text p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin: 0 10px 5px 10px;
+    display: block;
+    font-size: 14px;
+  }
+
+  .campaign-wrapper {
+    max-width: 300px;
+  }
+
+  .helmer {
+    background: url(img/helmer-mobile.jpg);
+    background-size: cover;
+    border-radius: 7px;
+  }
+
+  .turpin {
+    background: url(img/turpin-mobile.jpg);
+    background-size: cover;
+    border-radius: 7px;
+  }
+
+  .clinton {
+    background: url(img/clinton-mobile.jpg);
+    background-size: cover;
+    border-radius: 7px;
+  }
+
+  #contact {
+    height: 115px;
+  }
+
+.contact h2 {
+  font-size: 30px;
+  margin-left: 0px;
+}
+
+.contact-list {
+  margin: 10px auto 0 20px;
+}
+
+.contact-list ul li a {
+  font-size: 14px;
+}
+
+.contact-list ul li a i {
+  font-size: 30px;
+}
 
   .circle {
     width: 50px;
@@ -504,5 +662,5 @@ main {
     max-height: 50px;
     max-width: 250px;
   }
-  
 }
+
