@@ -7,6 +7,7 @@
     <title>Jason P. Toups</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Oswald:700|Vollkorn:400i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="style2.css">
 </head>
 <body>
@@ -28,32 +29,46 @@
           <div class="brand">
             <p>A Web Developer and Democratic Campaigner with a passion for building digital tools to help progressive candidates win.</p>
           </div>
+          <div id="scroll">
+            <a href="#projects"><span></span>Scroll</a>
+          </div>
         </div>
       </section>
       <section class="slide" id="projects">
         <div class="parallax projects"></div>
           <div class="slide-content">
             <h2>My Personal Projects</h2>
-            <a href="https://jasonptoups.github.io/2018-candidates-frontend/">
               <div class="project-card">
                 <h3>Candidate Explorer</h3>
                 <img class="project-image" src="img/candidate-explorer.png" alt="2018 Candidate Explorer">
                 <div class="project-text">
-                  <p class=""><span>Purpose:</span> A single page application that allows users to view Democratic candidates for Congress and filter them dynamically based on several criteria.</p>
+                  <p>
+                    <div class="devicon-vuejs-plain icon"></div>
+                    <div class="devicon-mongodb-plain icon"></div>
+                    <div class="devicon-nodejs-plain icon"></div>
+                    <div class="devicon-express-original icon"></div>
+                  </p>
                   <p class=""><span>Technologies:</span> VueJS, MongoDB, Node, Express, CSS (Bulma)</p>
+                  <p class=""><span>Purpose:</span> A single page application that allows users to view Democratic candidates for Congress and filter them dynamically based on several criteria.</p>
+                  <a href="https://jasonptoups.github.io/2018-candidates-frontend/">Deployed</a>
+                  <a href="https://github.com/jasonptoups/2018-candidates-react">GitHub</a>
                 </div>
               </div>
-            </a>
-            <a href="https://jasonptoups.github.io/flash-cards/">
               <div class="project-card">
                 <h3>Learn Hiragana</h3>
                 <img class="project-image" src="img/learn-hiragana.png" alt="Learn Hiragana flashcards App">
                 <div class="project-text">
-                  <p class=""><span>Purpose:</span> A single page application provides users with flashcards for learning Japanese Hiragana. Each flashcard has a helpful mnemonic and keeps score as you go along.</p>
+                  <p>
+                    <div class="devicon-javascript-plain icon"></div>
+                    <div class="devicon-html5-plain icon"></div>
+                    <div class="devicon-css3-plain icon"></div>
+                  </p>    
                   <p class=""><span>Technologies:</span> Vanilla JavaScript, HTML, CSS</p>
+                  <p class=""><span>Purpose:</span> A single page application provides users with flashcards for learning Japanese Hiragana. Each flashcard has a helpful mnemonic and keeps score as you go along.</p>
+                  <a href="https://jasonptoups.github.io/flash-cards/">Deployed</a>
+                  <a href="https://github.com/jasonptoups/flash-cards">GitHub</a>
                 </div>
               </div>
-            </a>
           </div>
       </section>
       <section class="slide" id="campaigns">
@@ -119,5 +134,6 @@
         </div>
       </footer>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
